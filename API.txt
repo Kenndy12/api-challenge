@@ -1,0 +1,31 @@
+GET ALL PRODUCT = http://localhost:5000/api/getProducts
+GET A PRODUCT = http://localhost:5000/api/getProducts/1
+UPDATE A PRODUCT = http://localhost:5000/api/updateProducts/5
+	{
+    		"description" : "just a mouse"
+	}
+
+
+CREATE A PRODUCT = http://localhost:5000/api/createProducts
+	{
+    		"id":"6",
+    		"name":"logitech g304",
+    		"description": "just a mouse",
+    		"price":80
+	}
+REMOVE A PRODUCT = http://localhost:5000/api/deleteProducts/6
+GET ALL SELLER = http://localhost:5000/api/getSellers
+GET A SELLER =  http://localhost:5000/api/getSeller/1
+CREATE A SELLER = http://localhost:5000/api/registerSeller
+	{
+		"sellerId":"3",
+    		"name":"pete pete",
+    		"address":"singapore"
+	}
+
+DELETE A SELLER = http://localhost:5000/api/deleteSeller/3	
+UPDATE A SELLER = http://localhost:5000/api/updateSeller/2
+	{
+   	 	"name":"oswaldo"
+	}
+GET SELLER'S PRODUCT = http://localhost:5000/api/getSellerProduct/1
